@@ -3,10 +3,12 @@ def authenticate(username, password):
 
 
 def login(username, password):
-    if username == "student" and password == "password":
-        print("Login successful")
+    if username and password:
+        print("Authentication successful")
+        return True
     else:
-        print("Invalid username or password")
+        print("Authentication failed")
+        return False
 
 
 if __name__ == "__main__":
